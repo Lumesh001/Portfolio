@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import MainBackgroundComponent from "@/components/common/BackgroundComponent";
+import Navbar from "@/components/common/Navbar";
 
 
 const geistSans = localFont({
@@ -31,6 +32,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
       >
        <MainBackgroundComponent/>
+       <Navbar/>
         {children}
       </body>
     </html>
